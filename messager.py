@@ -72,7 +72,6 @@ def display_one_user(email):
     cnx = connection()
     cursor = cnx.cursor()
     user = User.get_user_by_email(cursor, email)
-    # print("""{}\n{}""".format(user.username, user.email))
     cursor.close()
     cnx.close()
     return user
@@ -224,22 +223,6 @@ else:
     print('wpisz -h, aby uzyskać pomoc i zobaczyć możliwe opcje\n')
 
 
-# create_user('tom_01', 'tom_01@onet.pl', 'abrakadabra')
-# create_user('barbara007', 'barbara.k@interia.pl', 'superduper18')
-# create_user('Adam Kowal', 'adam.kowal@o2.pl', 'moje_haslo')
-# create_user('SuperAnna', 'annK@o2.pl', 'hokus-pokus')
-# 'Antoni Banderas', antoniBan@onet.pl, czary-mary
-
-# CREATE TABLE messages(
-# id serial,
-# from_id int,
-# to_id int,
-# tekst VARCHAR(255),
-# creation_date timestamp,
-# PRIMARY KEY(id),
-# FOREIGN KEY(from_id) REFERENCES users(id),
-# FOREIGN KEY(to_id) REFERENCES users(id)
-# );
 
 
 
