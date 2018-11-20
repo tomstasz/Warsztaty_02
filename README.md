@@ -1,2 +1,2 @@
-# Warsztaty_02
+# Warsztaty_Bazy_danych
 Warsztaty z baz danych
